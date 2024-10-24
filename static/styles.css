@@ -1,0 +1,81 @@
+/* styles.css */
+
+html, body {
+    height: 100%; /* Full height for body */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f5; /* Background color */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Font family */
+}
+
+.container {
+    max-width: 600px; /* Max width of the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* Background color of the container */
+    text-align: center; /* Center text inside container */
+}
+
+h1 {
+    font-size: 2.5em; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+p {
+    font-size: 1.2em; /* Font size for paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.upload-form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange items in column */
+    align-items: center; /* Center items horizontally */
+}
+
+.file-input {
+    margin: 10px 0; /* Space around the file input */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 80%; /* Width of the input */
+    font-size: 1em; /* Font size for input text */
+    color: #555; /* Text color inside input */
+}
+
+.file-input:focus {
+    border-color: #0056b3; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 1em; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.result {
+    margin-top: 20px; /* Space above the result */
+}
+
+.result h2 {
+    font-size: 1.5em; /* Font size for result heading */
+    color: #333; /* Color for result heading */
+}
+
+.result span {
+    font-weight: bold; /* Bold text for genre */
+    color: #007bff; /* Color for genre text */
+}

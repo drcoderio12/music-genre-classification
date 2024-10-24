@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Genre Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Genre Classification</h1>
+        <div class="form-container">
+            <form method="POST" enctype="multipart/form-data">
+                <label class="custom-file-upload">
+                    <input type="file" name="file" accept="audio/*" required>
+                </label>
+                <button type="submit">Predict Genre</button>
+            </form>
+        </div>
+
+        {% if genre %}
+            <div class="result">
+                <h2>Predicted Genre: <span>{{ genre }}</span></h2>
+            </div>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
